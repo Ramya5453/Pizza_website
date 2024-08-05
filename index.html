@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Pizza Spot</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><input type="text" id="search" placeholder="Search..."></li>
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Pizzariaaaa</h1>
+            <h2>The tasty pizza of <br> your choice</h2>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80.png" alt="">
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We make the best pizza in town. <br>We thrive our best to give our customers the best pizza </h2>
+            <p>Indulge in the pizza feast that will change your taste buds forever!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Menu</span>
+            <h2>Tasty menu of the week</h2>
+        </div>
+        <div class="menu-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg" alt="">
+                </div>
+                <h2>Pizza Margherita</h2>
+                <h3>Roundish in shape with a raised edge and garnished with hand-crushed peeled tomatoes, mozzarella, fresh basil leaves, and extra virgin olive oil.</h3>
+                <span>Rs.200</span>
+                <a href="#" class="add-to-cart-btn btn" data-name="Pizza Margherita" data-price="200">Add to Cart</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/free-photo/pepperoni-pizza-with-sausages-cheese-dark-wooden-table_220768-9277.jpg?size=626&ext=jpg" alt="">
+                </div>
+                <h2>Paneer Tikka Pizza</h2>
+                <h3>Whole wheat flour dough and topped with a layer of pizza sauce, marinated paneer tikka cubes, mozzarella cheese.</h3>
+                <span>Rs.350</span>
+                <a href="#" class="add-to-cart-btn btn" data-name="Paneer Tikka Pizza" data-price="350">Add to Cart</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=740&t=st=1661842808~exp=1661843408~hmac=c40f0c154036b96b1dba17947c4e4f7c07f40db983106490402bb0b7b6ec452e" alt="">
+                </div>
+                <h2>Chicken Tikka Pizza</h2>
+                <h3>It is traditionally small pieces of boneless chicken baked using skewers on a brazier called angeethi or over charcoal after marinating in Indian spices and dahi (yogurt)—essentially a boneless version of tandoori chicken.</h3>
+                <span>RS.450</span>
+                <a href="#" class="add-to-cart-btn btn" data-name="Chicken Tikka Pizza" data-price="450">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Cart Section -->
+   <section id="cart" class="cart">
+    <div class="heading">
+        <h2>Your Cart</h2>
+    </div>
+    <div class="cart-container">
+        <!-- Cart items will be dynamically added here by JavaScript -->
+    </div>
+    <div class="total">Total Price: Rs.<span id="total-price">0.00</span></div>
+</section>
+    <!-- Service -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best food services</h2>
+        </div>
+        <div class="services-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Order online</h3>
+                <p>Order through our official website or through Swiggy and Zomato.</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Shipping</h3>
+                <p>The order will be shipped with great care.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Delivered</h3>
+                <p>The order will be delivered to doorsteps by our delivery partner.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Connect -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Pizza spot</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Menu Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Quick Links</h3>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map' ><span>No-7, NRG Street,KK Pudur, Saibaba Colony, Coimbatore-641038</span></i>
+            <i class='bx bxs-phone' ><span>+91 9791343812</span></i>
+            <i class='bx bxs-envelope' ><span>pizzaspot@email.com</span></i>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
